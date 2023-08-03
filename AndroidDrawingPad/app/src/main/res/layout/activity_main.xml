@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-298dp"
+        tools:visibility="visible">
+
+        <!-- Drawing area -->
+        <FrameLayout
+            android:id="@+id/drawingArea"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/toolSection"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <!-- Tool section -->
+        <LinearLayout
+            android:id="@+id/toolSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/darker_gray"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Line thickness buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/lineThicknessSmall"
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/line_thickness_small"
+                    android:contentDescription="@string/line_thickness_small_description"
+                    android:src="@drawable/line_thickness_small"
+                    tools:src="@drawable/line_thickness_small" />
+
+                <ImageButton
+                    android:id="@+id/lineThicknessMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/line_thickness_medium"
+                    android:contentDescription="@string/line_thickness_medium_description"
+                    android:src="@drawable/line_thickness_medium"
+                    tools:src="@drawable/line_thickness_medium" />
+
+                <ImageButton
+                    android:id="@+id/lineThicknessLarge"
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/line_thickness_large"
+                    android:contentDescription="@string/line_thickness_large_description"
+                    android:src="@drawable/line_thickness_large"
+                    tools:src="@drawable/line_thickness_large" />
+
+                <ImageButton
+                    android:id="@+id/clearButton"
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackground"
+                    android:contentDescription="@string/clear_button_description"
+                    android:src="@drawable/ic_clear"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+            </LinearLayout>
+
+            <!-- Color buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/colorButtonRed"
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackground"
+                    android:contentDescription="@string/color_button_red_description"
+                    android:src="@drawable/color_button_red"
+                    android:visibility="visible"
+                    tools:src="#FF0000"
+                    tools:visibility="visible" />
+
+                <ImageButton
+                    android:id="@+id/colorButtonGreen"
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackground"
+                    android:contentDescription="@string/color_button_green_description"
+                    android:src="@drawable/color_button_green"
+                    android:visibility="visible"
+                    tools:src="#00FF00"
+                    tools:visibility="visible" />
+
+                <ImageButton
+                    android:id="@+id/colorButtonBlue"
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackground"
+                    android:contentDescription="@string/color_button_blue_description"
+                    android:src="@drawable/color_button_blue"
+                    android:visibility="visible"
+                    tools:src="#0000FF"
+                    tools:visibility="visible" />
+
+                <ImageButton
+                    android:id="@+id/colorButtonBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackground"
+                    android:contentDescription="@string/color_button_black_description"
+                    android:src="@drawable/color_button_black"
+                    android:visibility="visible"
+                    tools:src="@color/black"
+                    tools:visibility="visible" />
+
+                <ImageButton
+                    android:id="@+id/colorButtonYellow"
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackground"
+                    android:contentDescription="@string/color_button_yellow_description"
+                    android:src="@drawable/color_button_yellow"
+                    android:visibility="visible"
+                    tools:src="#FFFF00"
+                    tools:visibility="visible" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
